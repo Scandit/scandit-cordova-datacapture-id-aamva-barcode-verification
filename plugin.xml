@@ -1,0 +1,32 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="scandit-cordova-datacapture-id-aamva-barcode-verification" version="6.23.0">
+    <name>ScanditIdAamvaBarcodeVerification</name>
+    <engines>
+        <engine name="cordova-ios" version=">=5.0.0" />
+        <engine name="cordova-android" version=">=10.0.0" />
+    </engines>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ScanditIdAamvaBarcodeVerification">
+                <param name="ios-package" value="ScanditIdAamvaBarcodeVerification" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/ScanditIdAamvaBarcodeVerification-Bridging-Header.h" type="BridgingHeader" />
+        <source-file src="src/ios/ScanditIdAamvaBarcodeVerification.swift" />
+        <podspec>
+            <pods use-frameworks="true">
+                <pod name="ScanditIdAamvaBarcodeVerification" spec="= 6.23.0" />
+            </pods>
+        </podspec>
+    </platform>
+    <platform name="android">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ScanditIdAamvaBarcodeVerification">
+                <param name="android-package" value="com.scandit.datacapture.cordova.idaamvabarcodeverification.ScanditIdAamvaBarcodeVerification" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/ScanditIdAamvaBarcodeVerification.kt" target-dir="kotlin/com/scandit/datacapture/cordova/idaamvabarcodeverification" />
+        <framework custom="true" src="src/android/build.gradle" type="gradleReference" />
+        <hook src="src/hooks/support-kotlin.js" type="after_plugin_install" />
+    </platform>
+</plugin>
