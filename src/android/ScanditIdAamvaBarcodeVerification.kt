@@ -8,4 +8,4 @@ package com.scandit.datacapture.cordova.idaamvabarcodeverification
 
 import org.apache.cordova.CordovaPlugin
 
-class ScanditIdAamvaBarcodeVerification : CordovaPlugin() {}
+class ScanditIdAamvaBarcodeVerification : CordovaPlugin()
