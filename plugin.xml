@@ -1,4 +1,4 @@
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="scandit-cordova-datacapture-id-aamva-barcode-verification" version="6.28.5">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="scandit-cordova-datacapture-id-aamva-barcode-verification" version="7.2.1">
     <name>ScanditIdAamvaBarcodeVerification</name>
     <engines>
         <engine name="cordova-ios" version=">=5.0.0" />
@@ -15,7 +15,7 @@
         <source-file src="src/ios/ScanditIdAamvaBarcodeVerification.swift" />
         <podspec>
             <pods use-frameworks="true">
-                <pod name="ScanditIdAamvaBarcodeVerification" spec="= 6.28.5" />
+                <pod name="ScanditIdAamvaBarcodeVerification" spec="= 7.2.1" />
             </pods>
         </podspec>
     </platform>
