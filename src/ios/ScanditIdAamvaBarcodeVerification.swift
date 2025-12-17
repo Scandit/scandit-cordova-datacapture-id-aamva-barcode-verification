@@ -1,3 +1,2 @@
-
 @objc(ScanditIdAamvaBarcodeVerification)
-public class ScanditIdAamvaBarcodeVerification: CDVPlugin { }
+public class ScanditIdAamvaBarcodeVerification: CDVPlugin {}
